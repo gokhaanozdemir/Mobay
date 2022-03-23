@@ -14,8 +14,8 @@ class Form extends Component {
       date: null,
     };
   }
-  Submit = () => {
-    this.props.Submit({
+  handleSubmit = () => {
+    this.props.handleSubmit({
       ...this.props.form,
       ...this.state,
     });
@@ -104,9 +104,9 @@ class Form extends Component {
           <input
             type="date"
             value={this.state.date}
-            onChange={() =>
+            onChange={(e) =>
               this.setState({
-                date: new Date(),
+                date: e.target.value
               })
             }
           />
@@ -123,7 +123,7 @@ class Form extends Component {
             <option value="Terminalde Teslim">Terminalde Teslim</option>
             <option value="Taşıyıcıya Masrafsız">Taşıyıcıya Masrafsız</option>
           </select>
-          <button onClick={this.Submit}>+</button>
+          <button onClick={this.handleSubmit}>+</button>
         </div>
       </div>
     );

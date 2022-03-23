@@ -9,7 +9,7 @@ class App extends Component {
     };
   }
 
-  handlesubmit =
+  handleSubmit =
     () =>
     ({
       product,
@@ -41,9 +41,9 @@ class App extends Component {
         {this.state.items.length > 0 ? (
           this.state.items.map((form) => <FormList key={form} {...form} />)
         ) : (
-          <div style={{ display: "none" }}></div>
+          <span id="span">Henüz girdi yok!</span>
         )}
-        <Form handlesubmit={this.Sumbit} />
+        <Form handleSubmit={this.handleSubmit} />
       </div>
     );
   }
