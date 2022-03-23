@@ -14,6 +14,7 @@ class Form extends Component {
       date: null,
     };
   }
+
   handleSubmit = () => {
     this.props.handleSubmit({
       ...this.props.form,
