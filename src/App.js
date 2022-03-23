@@ -9,9 +9,17 @@ class App extends Component {
     };
   }
 
-  handleSubmit =
-    () =>
-    ({
+  handleSubmit = ({
+    product,
+    code,
+    location,
+    explanation,
+    supplier,
+    quantity,
+    delivery,
+    date,
+  }) => {
+    const form = {
       product,
       code,
       location,
@@ -20,21 +28,11 @@ class App extends Component {
       quantity,
       delivery,
       date,
-    }) => {
-      const form = {
-        product,
-        code,
-        location,
-        explanation,
-        supplier,
-        quantity,
-        delivery,
-        date,
-      };
-      this.setState({
-        items: [...this.state.items, form],
-      });
     };
+    this.setState({
+      items: [...this.state.items, form],
+    });
+  };
   render() {
     return (
       <div>

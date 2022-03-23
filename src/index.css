@@ -1,35 +1,30 @@
 body {
   height: 100%;
-  width: 100%;
   padding: 0;
   margin: 0;
 }
 .form {
-  width: auto;
-  height: 350px;
-  background-color: aqua;
+  background-color: #1e266d;
 }
 .row-1 {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 35px;
 }
 .row-1 select {
   border: 1px solid #ffb6c1;
-  background-color: chartreuse;
   width: 200px;
   margin: 10px;
   text-align: center;
+  color: #0e0e1a;
 }
 .row-1 input {
   border: 1px solid #ffb6c1;
-  background-color: chartreuse;
   width: 190px;
   margin: 10px;
+  color: black;
 }
-.row-1 option {
-  background-color: chartreuse;
-}
+
 .row-1 button {
   width: 40px;
   height: auto;
@@ -40,3 +35,28 @@ body {
   margin-right: 18%;
   cursor: pointer;
 }
+#span {
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  color: crimson;
+}
+.form-list {
+  display: flex;
+  background-color: #fff;
+  height: 49%;
+  padding: 20px;
+  width: auto;
+  position: absolute;
+  top: 50%;
+}
+.row-select {
+  display: flex;
+  justify-content:flex-start;
+  padding: 35px;
+}
+.row-select input {
+  margin: 7px;
+  text-align: center;
+}
+
