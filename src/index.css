@@ -2,6 +2,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
+  background-color: #fff;
 }
 .form {
   background-color: #1e266d;
@@ -41,22 +42,21 @@ body {
   left: 45%;
   color: crimson;
 }
-.form-list {
-  display: flex;
-  background-color: #fff;
-  height: 49%;
-  padding: 20px;
+.table {
+  border-collapse: collapse;
+  background-color: #ccc;
+  height: 10%;
   width: auto;
   position: absolute;
-  top: 50%;
+  top: 65%;
 }
-.row-select {
-  display: flex;
-  justify-content:flex-start;
-  padding: 35px;
-}
-.row-select input {
-  margin: 7px;
+.table td {
+  border: 1px solid;
+  width: 150px;
+  height: 50px;
   text-align: center;
 }
-
+.table th {
+  border: 1px solid;
+  height: 50px;
+}

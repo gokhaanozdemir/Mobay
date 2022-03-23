@@ -82,7 +82,8 @@ class Form extends Component {
           </select>
           <input
             placeholder="Açıklama"
-            value={this.state.product}
+            type="text"
+            value={this.state.explanation}
             onChange={(e) =>
               this.setState({
                 explanation: e.target.value,
@@ -106,7 +107,7 @@ class Form extends Component {
             value={this.state.date}
             onChange={(e) =>
               this.setState({
-                date: e.target.value
+                date: e.target.value,
               })
             }
           />

@@ -14,31 +14,33 @@ export default class FormList extends Component {
     } = this.props;
 
     return (
-      <div className="form-list">
-        <form>
-          <div className="row-select">
-          <label>Ürün Adı</label>
-          <input type="text" value={product} />
-          <label>Ürün Kodu</label>
-          <input type="text" value={code} />
-          <label>Tedarikçi Ürün Kodu</label>
-          <input type="text" value={location} />
-          </div>
-          <div className="row-select">
-          <label>Müşteri Sevk Adresi</label>
-          <input type="text" value={explanation} />
-          <label>Açıklama</label>
-          <input type="text" value={supplier} />
-          <label>Miktar</label>
-          <input type="text" value={quantity} />
-          </div>
-          <div className="row-select">
-          <label>Temin Tarihi</label>
-          <input type="text" value={delivery} />
-          <label>Sevk Şekli</label>
-          <input type="text" value={date} />
-          </div>
-        </form>
+      <div>
+        <table className="table">
+          <thead>
+            <tr>
+              <th>Ürün Adı</th>
+              <th>Ürün Kodu</th>
+              <th>Tedarikçi Ürün Kodu</th>
+              <th>Müşteri Sevk Adresi</th>
+              <th>Açıklama</th>
+              <th>Miktar</th>
+              <th>Temin</th>
+              <th>Sevk Şekli</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{product}</td>
+              <td>{code}</td>
+              <td>{supplier}</td>
+              <td>{location}</td>
+              <td>{explanation}</td>
+              <td>{quantity}</td>
+              <td>{date}</td>
+              <td>{delivery}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     );
   }
