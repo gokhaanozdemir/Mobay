@@ -24,6 +24,7 @@ body {
   width: 190px;
   margin: 10px;
   color: black;
+  text-transform: capitalize;
 }
 
 .row-1 button {
@@ -42,13 +43,26 @@ body {
   left: 45%;
   color: crimson;
 }
+@keyframes example {
+  from {
+    margin-right: 100%;
+    width: 300px;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 .table {
   border-collapse: collapse;
-  background-color: #ccc;
+  background-color: #93dafe;
   height: 10%;
   width: auto;
   position: absolute;
   top: 65%;
+  color: brown;
+  animation-name: example;
+  animation-duration: 4s;
 }
 .table td {
   border: 1px solid;
