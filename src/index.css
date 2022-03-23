@@ -32,9 +32,9 @@ body {
   width: 40px;
   height: auto;
   border-radius: 50px;
-  border: 1px solid deepskyblue;
-  background-color: deepskyblue;
+  border: 1px solid red;
+  background-color: red;
   color: white;
-  margin-right: 10%;
+  margin-right: 18%;
   cursor: pointer;
 }
